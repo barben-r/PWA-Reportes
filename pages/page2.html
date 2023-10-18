@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+</head>
+<body>
+    <h1>Bienvenidos a page 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus eaque ullam quia, similique maxime eos reprehenderit excepturi quis nulla odit amet facere explicabo beatae numquam minima fugiat sit, laboriosam aliquid!</p>
+    <a href="../index.html">ir a index</a>
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registrado con éxito:', registration);
+      })
+      .catch(function(error) {
+        console.log('Error al registrar el Service Worker:', error);
+      });
+  }
+</script>
+</html>
